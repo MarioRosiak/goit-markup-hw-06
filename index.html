@@ -448,16 +448,103 @@
               </svg>
             </div>
           </div>
+          <div class="newsletter">
+            <h4>Zapisz się do newslettera</h4>
+            <input class="input-newsletter" type="email" name="email" required placeholder="E-mail" />
+            <button class="button-newsletter"type="submit">
+              <span class="tilte-newsletter">Zapisz się</span>
+            </button>
+            <svg class="icon-send" viewBox="0 0 32 32" width="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </div>
         </div>
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="close" data-modal-close>
-          <svg viewBox="0 0 42 52" height="16" width="16">
+          <svg viewBox="0 0 32 32" height="16px" width="16px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </div>
+        <form action="">
+          <ul>
+            <li>
+              <h1>Zostaw swoje dane w formularzu poniżej</h1>
+            </li>
+            <li>
+              <label>
+                Imie
+                <svg viewBox="0 0 18 18" height="30px" width="30px">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input
+                  type="text"
+                  name="imie"
+                  required
+                  pattern="^[A-Z][a-z]+$"
+                  title="Wymagana wielka litera. Zabronione symbole i spacje."
+                />
+              </label>
+              <label>
+                Telefon
+                <svg viewBox="0 0 18 18" height="30px" width="30px">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+                <input
+                  type="tel"
+                  name="telefon"
+                  required
+                  pattern="^[1-9]{1}[0-9]{8}$"
+                  title="Podaj 9 cyfrową wartość nie zaczynającą się od 0."
+                />
+              </label>
+              <label>
+                Email
+                <svg viewBox="0 0 18 18" height="30px" width="30px">
+                  <use href="./images/icons.svg#icon-email1"></use>
+                </svg>
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                Komentarz
+                <textarea
+                  name="komentarz"
+                  id=""
+                  cols="30"
+                  rows="1"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+              </label>
+            </li>
+            <li class="check-box">
+              <input
+                type="checkbox"
+                id="regulations"
+                required
+                title="Pole wymagane"
+              />
+              <label for="regulations">
+                <div>
+                  <svg class="hidden-check" for="regulations">
+                    <use href="./images/icons.svg#icon-check-box"></use>
+                  </svg>
+                </div>
+                <p class="check-text">
+                  Oświadczam iż akceptuję
+                  <a class="link-modal" href="Regulamin"> Regulamin</a>
+                  i
+                  <a class="link-modal" href="Politykę">Politykę Prywatności</a
+                  >.
+                </p>
+              </label>
+            </li>
+            <li>
+              <button class="button first-button" type="submit">Wyślij</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
