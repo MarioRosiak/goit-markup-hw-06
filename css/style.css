@@ -209,6 +209,7 @@ h4 {
 }
 .btn-services:hover {
   background-color: #1187e8e4;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box {
   background-color: var(--Withe);
@@ -625,7 +626,20 @@ h4 {
 .icon-client:hover {
   fill: var(--Light-Blue);
 }
-/* home work 05 */
+.button-second {
+  background: #2196f3;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  color: var(--White);
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -773,6 +787,9 @@ h4 {
 .link-modal {
   color: var(--Light-Blue);
 }
+.link-modal:hover {
+  color: #d66a2fda;
+}
 
 .check-text {
   font-family: "Roboto";
@@ -828,10 +845,10 @@ h4 {
   border: solid 0px var(--Light-Blue);
 }
 
-/* .first-button:hover > data-modal-open {
-  transform: translate(10%, 100%);
-  visibility: hidden;
-} */
+.button-second:hover {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(27, 139, 230, 0.776);
+}
 
 .close {
   position: absolute;
