@@ -651,6 +651,7 @@ h4 {
   border: 0;
   border-radius: 4px;
   color: var(--White);
+  cursor: pointer;
 }
 
 .overlay {
@@ -801,7 +802,7 @@ h4 {
   color: var(--Light-Blue);
 }
 .link-modal:hover {
-  color: rgba(17, 135, 232, 0.999);
+  color: rgba(29, 37, 255, 0.999);
 }
 
 .check-text {
