@@ -80,6 +80,17 @@ a [href],
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
 h3 {
   font-weight: 700;
   font-size: 14px;
@@ -108,6 +119,7 @@ h4 {
 .link:focus {
   color: var(--Light-Blue);
 }
+
 .mail-item {
   display: flex;
   width: 161px;
@@ -143,10 +155,6 @@ h4 {
   fill: var(--Light-Blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-mail-tel {
-  width: 16px;
-  margin-right: 10px;
-}
 
 .bisnes-item {
   position: absolute;
@@ -174,7 +182,6 @@ h4 {
 .button {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
 }
 
 .text-item {
@@ -188,42 +195,33 @@ h4 {
 }
 
 .txt-main {
-  text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
   color: var(--Light-Black);
   margin: 0px;
   padding-top: 94px;
 }
-.button-newsletter {
-  margin-left: 12px;
-  position: absolute;
-  /* width: 200px;
-  height: 50px; */
-  background-color: var(--Light-Blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  fill: var(--White);
-  color: var(--White);
-  cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.txt-main-second {
+  font-weight: 700;
+  color: var(--Light-Black);
+  margin: 0px;
+  padding-top: 94px;
+  justify-content: center;
 }
 
 .btn-services {
   background-color: var(--Light-Blue);
-  /* box-shadow: 0px 4px 4px var(--Shadow-Red-Black);
-  border-radius: 4px; */
-  /* margin-top: 50px; */
+  box-shadow: 0px 4px 4px var(--Shadow-Red-Black);
+  border-radius: 4px;
+  margin-top: 50px;
   width: 200px;
   height: 50px;
-  /* color: var(--White);
+  color: var(--White);
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-services:hover {
   background-color: #1187e8e4;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box {
   background-color: var(--Withe);
@@ -558,7 +556,18 @@ h4 {
   color: red;
   margin: 0;
 }
-
+.icon {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.icon-mail-tel {
+  width: 16px;
+  fill: var(--Grey);
+  margin-right: 10px;
+}
 .client-container {
   display: flex;
   justify-content: center;
@@ -640,20 +649,7 @@ h4 {
 .icon-client:hover {
   fill: var(--Light-Blue);
 }
-.button-second {
-  background: #2196f3;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0;
-  border-radius: 4px;
-  color: var(--White);
-  cursor: pointer;
-}
-
+/* home work 05 */
 .overlay {
   position: absolute;
   top: 0;
@@ -682,7 +678,7 @@ h4 {
 .roll-up {
   position: absolute;
   box-sizing: border-box;
-  bottom: 97.5px;
+  bottom: 98px;
   width: 370px;
   height: 294px;
   overflow: hidden;
@@ -722,7 +718,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 40px;
 }
 
 .modal > form > ul > li:not(:nth-child(3)) > label {
@@ -795,14 +791,11 @@ h4 {
 }
 
 .modal > form > ul > li:last-child > button {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .link-modal {
   color: var(--Light-Blue);
-}
-.link-modal:hover {
-  color: rgba(29, 37, 255, 0.999);
 }
 
 .check-text {
@@ -834,9 +827,8 @@ h4 {
   box-sizing: border-box;
   border: solid 2px var(--Light-Black);
   border-radius: 2px;
-  opacity: 2;
+  opacity: 1;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--Ligth-Blue);
 }
 
 .check-box > input:checked + label > div > svg {
@@ -844,24 +836,25 @@ h4 {
   height: 15px;
   box-sizing: border-box;
   border: solid 0px var(--Light-Blue);
-  fill: var(--White);
+  fill: var(--Light-Blue);
   border-radius: 2px;
   opacity: 1;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--Light-Blue);
 }
 
 .check-box > input:not(:checked) + label > div > svg {
   opacity: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--Light-Blue);
 }
 
 .check-box input:checked + label > div {
   border: solid 0px var(--Light-Blue);
 }
 
-.button-second:hover {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgba(17, 135, 232, 0.95);
+.first-button:hover > data-modal-open {
+  transform: translate(10%, 100%);
+  visibility: hidden;
 }
 
 .close {
@@ -875,7 +868,7 @@ h4 {
   fill: var(--Light-Black);
   cursor: pointer;
   transform: scale(1);
-  padding: 6px;
+  padding: 5px;
 }
 .close:hover {
   border: 1px solid rgba(152, 24, 24, 0.361);
@@ -895,7 +888,6 @@ h4 {
   margin: 0;
   color: #fff;
   padding-left: 16px;
-  margin-right: 12px;
 }
 .tilte-newsletter {
   display: flex;
@@ -924,21 +916,12 @@ h4 {
   fill: var(--White);
 }
 .button-newsletter:hover {
-  background-color: rgba(17, 135, 232, 0.894);
+  background-color: #1187e8e4;
 }
 
 .icon-send {
   position: absolute;
   margin-top: 13px;
-  margin-left: -56px;
+  margin-left: 160px;
   fill: var(--White);
-}
-.text-item-modal {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
